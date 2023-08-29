@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #212121;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    background-color: cadetblue;
+}
+
+h1:hover {
+    color: rgb(145, 145, 145);
+    background-color: rgb(120, 222, 225);
+}
+
+.container {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.box:hover {
+    height: 105px;
+    width: 105px;
+    font-size: 30px;
+}
+
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#pink {
+    background-color: pink;
+}

@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #212121;
+}
+
+h1 {
+    background-image: linear-gradient(to right, red, yellow, green);
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1:hover {
+    background-image: linear-gradient(to left, red, lightgreen, yellow, lightgreen, green);
+    letter-spacing: 2px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    height: fit-content;
+    width: 250px;
+    padding: 20px;
+    color: white;
+    background-color: #3e5d6e;
+    border-radius: 6px;
+    border: 10px solid white;
+}
+
+label:hover {
+    text-shadow: 2px 2px 4px black;
+    letter-spacing: 2px;
+}
+
+.box {
+    display: inline-block;
+    margin: 5px;
+    height: 30px;
+    width: 80%;
+    background: white;
+    outline: none;
+    border: 2px solid gainsboro;
+    border-radius: 4px;
+}
+
+.box:focus {
+    background-color: wheat;
+    border: 2px solid grey;
+    outline: none;
+}
+
+
+.button {
+    margin-top: 10px;
+    background-color: #13aa52;
+    border: 1px solid #13aa52;
+    width: 40%;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight:bolder;
+    outline: none;
+    outline: 0;
+    padding: 10px 10px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+    .button {
+        padding: 10px 10px;
+    }
+}
+
+.info {
+    background-color: sandybrown;
+    margin: 2px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.info p {
+    line-height: 30px;
+    font-size: small;
+    color: #212121;
+    font-weight: bolder;
+}
+
+.info h3 {
+    color: #004598;
+    text-shadow: 2px 2px #fff;
+}
+#result{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    width: 60%;
+}
