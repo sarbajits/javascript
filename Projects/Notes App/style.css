@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #82589F;
+}
+
+#main{
+    margin: 10px;
+}
+.note {
+    margin-top: 40px;
+    height:25vh;
+    width: 40vw;
+    background-color:#212121;
+}
+.note textarea{
+    height: 100%;
+}
