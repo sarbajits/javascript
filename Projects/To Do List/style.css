@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    padding: 10px 16px;
+    text-align: center;
+    font-size: 8vh;
+    color: #f1f1f1;
+    border-radius:6px;
+    margin: 4px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.box {
+    height: fit-content;
+    min-height: 50vh;
+    max-height: 80vh;
+}
+
+.input {
+    height: 20%;
+    width: fit-content;
+    background-color: black;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input input {
+    margin: 5px;
+    font-size: 3rex;
+    width: 40vw;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: rgb(207, 207, 207);
+    text-transform: capitalize;
+}
+
+.input span {
+    user-select: none;
+    margin: 10px;
+    color: white;
+}
+
+.container {
+    padding: 5px;
+    user-select: none;
+    text-transform: capitalize;
+}
+
+.container ul {
+    list-style-type: none;
+}
+
+.container ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 5px;
+    background-color: darkblue;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.container .material-symbols-outlined {
+    color: white;
+    width: 10vh;
+}
+
+.container .material-symbols-outlined:hover {
+    color: red;
+}
+
+.done {
+    text-decoration: line-through;
+    color: red !important;
+    background-color: #00eeff !important;
+}
