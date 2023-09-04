@@ -8,15 +8,76 @@ body {
     background: #82589F;
 }
 
-#main{
-    margin: 10px;
+#main {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
+#addBtn {
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    border-radius: 6px;
+    border: none;
+    background-color: #212121;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+#addBtn:hover{
+    right: 5px;
+    top: 4px;
+    box-shadow: 2px 2px 2px white;
+}
+
+#addBtn:active{
+    color: #212121;
+    background-color: greenyellow;
+    transition-duration: 0.1s;
+}
+
 .note {
-    margin-top: 40px;
-    height:25vh;
-    width: 40vw;
-    background-color:#212121;
+    /* margin-top: 30px; */
+    margin: 20px;
+    height: 25vh;
+    min-width: 40vw;
+    background-color: #212121;
+    border-radius: 6px;
 }
-.note textarea{
+
+.toolbar {
+    display: flex;
+    justify-content: end;
+    color: white;
+    padding: 2px;
+}
+
+.toolbar i {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.toolbar i:hover {
+    color: blanchedalmond;
+}
+
+.note textarea {
     height: 100%;
+    width: 100%;
+    resize: none;
+    border: none;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: greenyellow;
+}
+
+.note textarea:focus {
+    border: none;
+    outline: none;
 }
